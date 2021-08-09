@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+    <bean id = "profile" class = "vehicleScope.Profile" >
+    <property name="student" ref="student1"  />
+    </bean>
+    
+
+   
+   <bean id = "student1" class = "vehicleScope.Student">
+      <property name = "name" value = "Zara" />
+      <property name = "id" value = "11"/>
+   </bean>
+
+   
+   <bean id = "student2" class = "vehicleScope.Student">
+      <property name = "name" value = "Nuha" />
+      <property name = "id" value = "2"/>
+   </bean>
+    
+    
+    </beans>
